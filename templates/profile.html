@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<style>
+	#div1{
+		width: 300px;
+		height: 380px;
+		background-color: black;
+		position : relative;
+		left:500px;
+		top:100px;
+		opacity:0.8;
+		border-radius:5px;
+		box-shadow: 10px 10px 5px grey;
+	}
+	#div2{
+		position: relative;
+		top:20px;
+		padding:5px 5px 5px 5px;		
+	}
+	body{
+		backgrounmd-image: url("https://images8.alphacoders.com/473/473471.jpg");
+		background-size: cover;
+	}
+	h1   {
+		color: blue;
+	}
+	p    {
+		color: white;
+		text-decoration: bold;
+	}
+	#inp{
+		width: 50%;
+		padding:12px 20px;
+		border: 2px solid white;
+		border-radius: 4px;
+		background-color: #F9E79F;
+    	color: white;
+	}
+	h2{
+		size: 500%;
+		color:white;
+		text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+		align-self: center;
+	}
+
+	</style>
+	</head>
+	<body style="text-align: center;">
+<h2>Product Evaluation across different cities</h2>
+<div id="div1">
+	<form target="_blank" method="POST" action="/map">
+	<div id="div2">
+	<p>Enter Product: <input id="inp" style="color:black;background-color:skyblue;text-decoration: bold;padding:5px;font-size: 16px;" type="text" name="query"><br><br></p>
+	<p>Enter city: <input id="inp" style="color:black;background-color:skyblue;text-decoration: bold;padding:5px;font-size: 16px;" type="text" name="place"><br><br><br><br><br></p>
+	<input type="submit" name="submit" style="height: 35px; font-size: 15px;width:250px;color:white;border-radius:4px;background-color: red;">
+	</div>
+	</form>
+</div>
+
+</body>
+
+</html>
